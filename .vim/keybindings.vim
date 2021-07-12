@@ -7,6 +7,7 @@ let mapleader = ","
 
 " Map jk to ESC in insert mode
 inoremap jk <esc>
+inoremap kj <esc>
 
 
 " *** VIMRC ***
@@ -70,8 +71,8 @@ nnoremap <leader>q :q!<CR>
 nnoremap <leader>bd :bd<cr>
 nnoremap <leader>bp :bprevious<CR>
 nnoremap <leader>bn :bnext<CR>
-nnoremap bp :bprevious<CR>
-nnoremap bn :bnext<CR>
+nnoremap <TAB> :bnext<CR>
+nnoremap <S-TAB> :bprevious<CR>
 
 
 " *** TABS ***
@@ -129,8 +130,11 @@ nnoremap <leader>e :Vexplore<CR>
 
 "Toggle FZF
 nnoremap <leader>p :Files<CR>
+nnoremap <c-p> :Files<CR>
 nnoremap <leader>s :Blines<space>
 nnoremap <leader>sg :Rg<space>
+nnoremap <c-e> :Buffers<CR>
+nnoremap <leader>ls :Buffers<CR>
 
 " Vim Test
 " nmap <silent> t<C-n> :TestNearest<CR>

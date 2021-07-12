@@ -1,8 +1,13 @@
+set nocompatible
+
+" Show matching brackets
+set showmatch
+
 " Allow buffers to hide when changed
 set hidden
 
 " Set relative number by default
-set relativenumber
+set number
 
 " Enable Highlight Search
 set hlsearch
@@ -55,6 +60,8 @@ set noshowmode
 
 set mouse+=a
 
+syntax on
+
 
 " SENSIBLE
 set backspace=indent,eol,start
@@ -67,7 +74,6 @@ if !has('nvim') && &ttimeoutlen == -1
   set ttimeoutlen=100
 endif
 
-set laststatus=2
 set ruler
 set wildmenu
 
@@ -120,6 +126,7 @@ let g:netrw_altv = 1
 let g:netrw_winsize = 25
 
 " Status bar
+set laststatus=2
 set statusline=
 " set statusline +=%1*\ %n\ %*            "buffer number
 " set statusline +=%5*%{&ff}%*            "file format
@@ -134,6 +141,13 @@ set statusline +=%1*%4v\ %*             "virtual column number
 
 " PLUGIN SETTINGS
 
+" Blamer
+let g:blamer_enabled = 1
+let g:blamer_delay = 300
+let g:blamer_show_in_visual_modes = 0
+let g:blamer_show_in_insert_modes = 0
+let g:blamer_date_format = '%m/%d/%y'
+
 " Editorconfig
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
@@ -141,7 +155,16 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 let g:rooter_patterns = ['>code', '.git', '!>node_modules', '!>vendor']
 
 " Vim Test
-let test#strategy = "vimterminal"
+let kitty = $KITTY_LISTEN_ON
+if kitty != ""
+	let test#strategy = "kitty"
+else
+	if has("nvim")
+		let test#strategy = "neovim"
+	else
+		let test#strategy = "vimterminal"
+	endif
+endif
 let test#php#phpunit#executable = 'php artisan test'
 
 " Vim Visual Multi

@@ -175,7 +175,7 @@ let g:coc_global_extensions = [
 	\'@yaegassy/coc-intelephense',
 	\]
 
-" CUSTOM ITEMS
-
-" Prettier
+" Custom Commands
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
+command! -nargs=0 Headwind :CocCommand tailwindCSS.headwind.sortTailwindClasses
+

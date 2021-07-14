@@ -24,24 +24,21 @@ let g:palenight_terminal_italics=1
 
 let g:spacegray_use_italics = 1
 
-let g:sonokai_style = "andromeda" "options: default, atlantis, andromeda, shusia, maia, espresso
+let g:sonokai_style = "shusia" "options: default, atlantis, andromeda, shusia, maia, espresso
 let g:sonokai_enable_italic = 1
 
-" colorscheme ayu
+colorscheme ayu
 " colorscheme dracula
 " colorscheme gruvbox
 " colorscheme nord
-" colorscheme OceanicNext
 " colorscheme palenight
-" colorscheme papercolor
+" colorscheme PaperColor
 " colorscheme spacegray
 " colorscheme tender
-" colorscheme seoul256
-" colorscheme seoul256_light
-colorscheme sonokai
+" colorscheme sonokai
 
 let g:lightline = {
-		\ 'colorscheme': 'sonokai',
+		\ 'colorscheme': colors_name,
 		\ 'active': {
 		\   'left': [ [ 'mode', 'paste' ],
 		\     ['gitbranch', 'readonly', 'filename', 'modified', ] ],

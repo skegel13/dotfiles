@@ -27,19 +27,19 @@ Plug 'lumiliet/vim-twig'
 
 " Utilities
 Plug 'tpope/vim-abolish'
-Plug 'tpope/vim-surround'
-Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-eunuch' 
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-vinegar'
+Plug 'mattn/emmet-vim'
 Plug 'andymass/vim-matchup'
 Plug 'raimondi/delimitmate'
-Plug 'tpope/vim-eunuch' 
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'vim-test/vim-test'
 
 " Themes
 Plug 'morhetz/gruvbox'
 Plug 'arcticicestudio/nord-vim'
-Plug 'mhartington/oceanic-next'
 Plug 'ajh17/spacegray.vim'
 Plug 'dracula/vim'
 Plug 'nlknguyen/papercolor-theme'

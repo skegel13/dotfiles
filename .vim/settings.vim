@@ -26,7 +26,7 @@ set wildignorecase
 set cursorline
 
 " Show column lengths
-set colorcolumn=80,120
+set colorcolumn=120
 
 " INDENTATION
 
@@ -119,11 +119,11 @@ set autowrite
 set autowriteall
 
 " netrw
-let g:netrw_banner = 0
+" Current using vim-vinegar, do I prefer that or want a project drawer style?
 let g:netrw_liststyle = 3
-let g:netrw_browse_split = 4
-let g:netrw_altv = 1
-let g:netrw_winsize = 25
+" let g:netrw_browse_split = 4
+" let g:netrw_altv = 1
+" let g:netrw_winsize = -36
 
 " Status bar
 set laststatus=2

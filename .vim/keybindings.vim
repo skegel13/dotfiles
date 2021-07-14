@@ -26,9 +26,6 @@ nnoremap <leader>vr :so $MYVIMRC<CR>
 nnoremap j gj
 nnoremap k gk
 
-" Home & End should be placed next to each other
-nnoremap - $
-
 " Move to beginning/end of line
 nnoremap B ^
 nnoremap E $
@@ -126,7 +123,7 @@ vnoremap <leader>c "+y
 
 " *** PLUGIN RELATED BINDINGS ***
 
-nnoremap <leader>e :Vexplore<CR>
+nnoremap <leader>e :Lexplore<CR>
 
 "Toggle FZF
 nnoremap <leader>p :Files<CR>

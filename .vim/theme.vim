@@ -17,6 +17,9 @@ set bg=dark
 let g:ayucolor="mirage" "options: dark, mirage
 let g:ayu_italic_comment = 1
 
+let g:dracula_bold = 1
+let g:dracula_italic = 1
+
 let g:gruvbox_contrast_light = "hard"
 let g:gruvbox_contrast_dark = "soft"
 
@@ -24,14 +27,14 @@ let g:palenight_terminal_italics=1
 
 let g:spacegray_use_italics = 1
 
-let g:sonokai_style = "shusia" "options: default, atlantis, andromeda, shusia, maia, espresso
+let g:sonokai_style = "atlantis" "options: default, atlantis, andromeda, shusia, maia, espresso
 let g:sonokai_enable_italic = 1
 
-colorscheme ayu
+" colorscheme ayu
 " colorscheme dracula
 " colorscheme gruvbox
 " colorscheme nord
-" colorscheme palenight
+colorscheme palenight
 " colorscheme PaperColor
 " colorscheme spacegray
 " colorscheme tender

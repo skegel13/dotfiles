@@ -141,6 +141,15 @@ set statusline +=%1*%4v\ %*             "virtual column number
 
 " PLUGIN SETTINGS
 
+" Airline
+let g:airline_powerline_fonts = 1
+let g:airline_detect_spell = 0
+let g:airline_highlighting_cache = 1
+let g:airline_extensions = ['branch', 'tabline', 'coc', 'fzf']
+let g:airline#extensions#tabline#show_buffers = 0
+let g:airline#extensions#tabline#show_tab_count = 0
+let g:airline#extensions#tabline#tab_min_count = 2
+
 " Blamer
 let g:blamer_enabled = 1
 let g:blamer_delay = 300

@@ -6,7 +6,8 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'antoinemadec/coc-fzf'
 Plug 'mhinz/vim-startify'
-Plug 'itchyny/lightline.vim'
+" Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
 
 " Formatting/Linting
 Plug 'editorconfig/editorconfig-vim'
@@ -48,5 +49,6 @@ Plug 'drewtempelmeyer/palenight.vim'
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'sainnhe/sonokai'
 Plug 'Luxed/ayu-vim'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()

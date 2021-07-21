@@ -12,7 +12,8 @@ export ZSH="/Users/seankegel/.oh-my-zsh"
 # ZSH_THEME="arrow"
 # ZSH_THEME="avit"
 # ZSH_THEME="theunraveler"
-ZSH_THEME="amuse"
+# ZSH_THEME="amuse"
+ZSH_THEME="agnoster"
 
 
 # Set list of themes to pick from when loading at random

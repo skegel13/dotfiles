@@ -168,6 +168,7 @@ let g:coc_global_extensions = [
 	\'coc-json',
 	\'coc-markdownlint',
 	\'coc-prettier',
+	\'coc-stylelintplus',
 	\'coc-svelte',
 	\'coc-tailwindcss',
 	\'coc-tsserver',

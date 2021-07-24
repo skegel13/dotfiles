@@ -118,7 +118,8 @@ nnoremap g* g*zz
 nnoremap g# g#zz
 
 " Copy to clipboard
-vnoremap <leader>c "+y
+vnoremap <leader>c "*y
+vnoremap <leader>y "*y
 
 
 " *** PLUGIN RELATED BINDINGS ***

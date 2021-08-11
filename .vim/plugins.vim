@@ -25,6 +25,7 @@ Plug 'APZelos/blamer.nvim'
 
 " Syntax
 Plug 'lumiliet/vim-twig'
+Plug 'sheerun/vim-polyglot'
 
 " Utilities
 Plug 'tpope/vim-abolish'

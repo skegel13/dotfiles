@@ -30,6 +30,11 @@ nnoremap k gk
 nnoremap B ^
 nnoremap E $
 
+" Keep it centered
+nnoremap n nzzzv
+nnoremap N Nzzzv
+nnoremap J mzJ`z
+
 " Navigate splits
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -120,6 +125,20 @@ nnoremap g# g#zz
 " Copy to clipboard
 vnoremap <leader>c "*y
 vnoremap <leader>y "*y
+
+" Undo break points
+inoremap , ,<c-g>u
+inoremap . .<c-g>u
+inoremap ! !<c-g>u
+inoremap ? ?<c-g>u
+
+" Move lines
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+inoremap <c-k> <esc>:m .-2<CR>==i
+inoremap <c-j> <esc>:m .+1<CR>==i
+nnoremap <leader>j :m .+1<CR>==
+nnoremap <leader>k :m .-2<CR>==
 
 
 " *** PLUGIN RELATED BINDINGS ***

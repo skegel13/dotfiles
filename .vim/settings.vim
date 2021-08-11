@@ -9,6 +9,9 @@ set hidden
 " Set relative number by default
 set number
 
+" Show signs next to line number
+set signcolumn=auto
+
 " Enable Highlight Search
 set hlsearch
 
@@ -77,7 +80,6 @@ endif
 set ruler
 set wildmenu
 
-
 if !&scrolloff
   set scrolloff=1
 endif
@@ -116,9 +118,9 @@ set autowriteall
 " netrw
 " Current using vim-vinegar, do I prefer that or want a project drawer style?
 let g:netrw_liststyle = 3
-" let g:netrw_browse_split = 4
-" let g:netrw_altv = 1
-" let g:netrw_winsize = -36
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = -36
 
 " Status bar
 set laststatus=2

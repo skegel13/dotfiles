@@ -143,7 +143,7 @@ nnoremap <leader>k :m .-2<CR>==
 
 " *** PLUGIN RELATED BINDINGS ***
 
-nnoremap <leader>e :Lexplore<CR>
+nnoremap <leader>e :NERDTreeToggle<CR>
 
 "Toggle FZF
 nnoremap <leader>p :Files<CR>

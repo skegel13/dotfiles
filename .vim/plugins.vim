@@ -29,15 +29,17 @@ Plug 'sheerun/vim-polyglot'
 
 " Utilities
 Plug 'tpope/vim-abolish'
-Plug 'tpope/vim-commentary'
+" Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-eunuch' 
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-vinegar'
+Plug 'tomtom/tcomment_vim'
 Plug 'mattn/emmet-vim'
 Plug 'andymass/vim-matchup'
 Plug 'raimondi/delimitmate'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'vim-test/vim-test'
+Plug 'preservim/nerdtree'
 
 " Themes
 Plug 'morhetz/gruvbox'

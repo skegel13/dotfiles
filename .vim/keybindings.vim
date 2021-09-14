@@ -149,7 +149,7 @@ nnoremap <leader>e :NERDTreeToggle<CR>
 nnoremap <leader>p :Files<CR>
 nnoremap <c-p> :Files<CR>
 nnoremap <leader>s :Blines<space>
-nnoremap <leader>sg :Rg<space>
+nnoremap <leader>sg :Rg<CR>
 nnoremap <c-e> :Buffers<CR>
 nnoremap <leader>ls :Buffers<CR>
 

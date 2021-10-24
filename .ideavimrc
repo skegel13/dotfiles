@@ -111,7 +111,16 @@ nnoremap <leader>q :q!<CR>
 set ideajoin
 
 nnoremap <leader>e :NERDTree<CR>
+" nnoremap <leader>e :action ActivateProjectToolWindow<CR>
 nnoremap <leader>p :action GotoFile<CR>
 nnoremap <leader>r :action RefactoringMenu<CR>
 nnoremap <leader>rn :action RenameElement<CR>
 nnoremap - :action ShowNavBar<CR>
+nnoremap [g :action GotoNextError<CR>
+nnoremap ]g :action GotoPreviousError<CR>
+nnoremap <leader>tn :action Rerun<CR>
+vnoremap <leader>y '<,'> :action $Copy<CR>
+nnoremap <leader>ac :action ShowIntentionActions<CR>
+nnoremap <space>o :action FileStructurePopup<CR>
+nnoremap <space>s :action GotoSymbol<CR>
+nnoremap <leader>vr :source ~/.ideavimrc<CR>

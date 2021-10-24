@@ -24,9 +24,9 @@ let g:sonokai_style = "atlantis" "options: default, atlantis, andromeda, shusia,
 let g:sonokai_enable_italic = 1
 
 " colorscheme ayu
-colorscheme dracula
+" colorscheme dracula
 " colorscheme gruvbox
-" colorscheme nord
+colorscheme nord
 " colorscheme palenight
 " colorscheme PaperColor
 " colorscheme spacegray

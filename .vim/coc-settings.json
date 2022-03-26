@@ -4,6 +4,6 @@
   "scss.validate": false,
   "wxss.validate": false,
 	"intelephense.telemetry.enabled": false,
-	"intelephense.path": "/Users/seankegel/.nvm/versions/node/v14.16.0/lib/node_modules/intelephense",
+	"intelephense.path": "",
 	"vetur.ignoreProjectWarning": true
 }

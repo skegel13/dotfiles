@@ -20,6 +20,9 @@ alias di="docker images --format \"{{.ID}}: {{.Repository}}:{{.Tag}}\""
 alias art="php artisan"
 alias tinker="php artisan tinker"
 alias atf="php artisan test --filter"
+alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
+alias sart='[ -f sail ] && sail art'
+alias snpm='[ -f sail ] && sail npm'
 
 # PhpUnit
 alias pf="vendor/bin/phpunit --filter"
@@ -27,3 +30,6 @@ alias pf="vendor/bin/phpunit --filter"
 # zshrc
 alias ezsh="vim ~/.zshrc"
 alias rzsh="source ~/.zshrc"
+
+# Go
+alias gt="go test"

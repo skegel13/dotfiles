@@ -1,0 +1,56 @@
+#!/bin/sh
+
+echo "Setting up your Mac...\n"
+
+# Check for Oh My Zsh and install if we don't have it
+echo "Installing Oh My Zsh..."
+rm -rf $HOME/.oh-my-zsh
+curl -L https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh | sh
+
+# Check for Homebrew and install if we don't have it
+echo "Installing Homebrew..."
+if test ! $(which brew); then
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+# Symlink zsh prefs
+echo "Linking Files..."
+rm $HOME/.zshrc
+ln -s $HOME/dotfiles/shell/.zshrc $HOME/.zshrc
+
+# Symlink the Mackup config
+rm $HOME/.mackup.cfg
+ln -s $HOME/dotfiles/.mackup.cfg $HOME/.mackup.cfg
+
+# Update Homebrew
+echo "Installing applications..."
+brew update
+brew bundle --file $HOME/dotfiles/Mac/Brewfile
+
+# Install global Composer packages
+echo "Installing composer dependencies..."
+/usr/local/bin/composer global require laravel/installer laravel/valet beyondcode/expose spatie/visit
+
+# Install Laravel Valet
+echo "Installing Laravel valet..."
+$HOME/.composer/vendor/bin/valet install
+
+# Create Project directory
+mkdir $HOME/Projects
+
+echo "Setting up Neovim..."
+rm $HOME/.vimrc
+ln -s $HOME/dotfiles/vim/.vimrc $HOME/.vimrc
+
+# Symlink neovim
+rm $HOME/.config/nvim
+ln -s $HOME/dotfiles/nvim $HOME/.config/nvim
+
+echo "Setting up Mac defaults..."
+source $HOME/dotfiles/mac/mac-defaults
+
+echo "\nRun the following to finish the setup..."
+echo "> mackup restore"

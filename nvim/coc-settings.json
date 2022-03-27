@@ -1,0 +1,10 @@
+{
+	"css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "wxss.validate": false,
+	"intelephense.telemetry.enabled": false,
+	"intelephense.path": "",
+	"intelephense.environment.phpVersion": "8.1.0",
+	"vetur.ignoreProjectWarning": true
+}

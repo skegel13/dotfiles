@@ -1,0 +1,45 @@
+# Taps
+tap 'nicoverbruggen/homebrew-cask'
+
+# Binaries
+brew "bat"
+brew "exa"
+brew "fd"
+brew "fzf"
+brew "git"
+brew "gh"
+brew "jq"
+brew "ripgrep"
+brew "mackup"
+brew "mas"
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
+
+# Dev
+brew "php"
+brew "composer"
+brew "node"
+
+# Apps
+cask 'appcleaner'
+cask 'brave-browser'
+cask 'dbngin'
+cask 'docker'
+cask 'fork'
+cask 'iterm2'
+cask 'kitty'
+cask 'insomnia'
+cask 'phpmon'
+cask 'phpstorm'
+cask 'ray'
+cask 'raycast'
+cask 'tableplus'
+cask 'tinkerwell'
+cask 'visual-studio-code'
+cask 'zoom'
+
+# Appstore Apps
+mas 'Bear', id: 1091189122
+mas 'Bitwarden', id: 1352778147
+mas 'Craft', id: 1487937127
+mas 'Things', id: 904280696

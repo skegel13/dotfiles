@@ -1,9 +1,0 @@
-{
-	"css.validate": false,
-  "less.validate": false,
-  "scss.validate": false,
-  "wxss.validate": false,
-	"intelephense.telemetry.enabled": false,
-	"intelephense.path": "",
-	"vetur.ignoreProjectWarning": true
-}

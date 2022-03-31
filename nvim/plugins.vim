@@ -60,3 +60,4 @@ Plug 'kyazdani42/nvim-tree.lua'
 " Themes
 Plug 'dracula/vim'
 Plug 'nlknguyen/papercolor-theme'
+Plug 'ayu-theme/ayu-vim'

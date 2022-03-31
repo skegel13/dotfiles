@@ -3,8 +3,20 @@
   "less.validate": false,
   "scss.validate": false,
   "wxss.validate": false,
+
 	"intelephense.telemetry.enabled": false,
+	"intelephense.phpdoc.useFullyQualifiedNames": true,
 	"intelephense.path": "",
 	"intelephense.environment.phpVersion": "8.1.0",
+	"intelephense.phpdoc.functionTemplate": {
+    "summary": "$SYMBOL_NAME ${0:Description}",
+    "tags": [
+      "",
+      "@param  ${1:$SYMBOL_TYPE}  $SYMBOL_NAME $2",
+      "@return ${1:$SYMBOL_TYPE} $2",
+      "@throws ${1:$SYMBOL_TYPE} $2"
+    ]
+  },
+
 	"vetur.ignoreProjectWarning": true
 }

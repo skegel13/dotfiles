@@ -1,9 +1,9 @@
 set rtp+=/usr/local/opt/fzf
 
 " INDENTATION
-set autoindent                                                                  "Preserve current indent on new lines
 set smartindent                                                                 "Automatic indentation. See :help smartindent
 set copyindent
+set autoindent                                                                  "Preserve current indent on new lines
 set softtabstop=4                                                               "Number of spaces a tab counts as with si
 set tabstop=4                                                                   "Indentation levels every four columns
 set shiftwidth=4                                                                "Indent/outdent by four columns
@@ -13,6 +13,7 @@ filetype plugin indent on                                                       
 
 " SENSIBLE
 set backspace=indent,eol,start                                                  "Make backspaces delete sensibly
+set smarttab
 
 " BRACKETS
 set matchpairs+=<:>                                                             "Jump between pairs (%) command
@@ -24,7 +25,7 @@ set relativenumber
 
 " COLUMNS
 set ruler                                                                       "Show line and column number of cursor pos
-set colorcolumn=120
+set colorcolumn=80,120
 
 " COMMAND MENU
 set wildmenu                                                                    "Visual autocomplete for command menu

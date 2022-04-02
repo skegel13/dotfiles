@@ -1,4 +1,5 @@
 # Shortcuts
+alias ~="cd ~/"
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 
 # Directories

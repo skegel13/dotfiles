@@ -1,6 +1,5 @@
 # Fig pre block. Keep at the top of this file.
-export PATH="${PATH}:${HOME}/.local/bin"
-eval "$(fig init zsh pre)"
+. "$HOME/.fig/shell/zshrc.pre.zsh"
 
 # Set path to Dotfiles
 export DOTFILES=$HOME/dotfiles
@@ -10,7 +9,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 # ZSH_THEME
 # ZSH_THEME="dracula-pro"
-ZSH_THEME="agnoster"
+ZSH_THEME=""
 
 plugins=(
     git
@@ -22,6 +21,10 @@ source $ZSH/oh-my-zsh.sh
 
 # Load additional dotfiles for zsh
 for file in $DOTFILES/shell/{aliases,exports,functions}.zsh; do
+	[ -r "$file" ] && [ -f "$file" ] && source "$file"
+done
+
+for file in ~/dotfiles-custom/shell/.{exports,aliases,functions,zshrc}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 unset file
@@ -49,5 +52,4 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Fig post block. Keep at the bottom of this file.
-eval "$(fig init zsh post)"
-
+. "$HOME/.fig/shell/zshrc.post.zsh"

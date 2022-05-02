@@ -1,7 +1,6 @@
 require'nvim-tree'.setup {
   auto_reload_on_write = true,
   disable_netrw = false,
-  hide_root_folder = false,
   hijack_cursor = false,
   hijack_netrw = false,
   hijack_unnamed_buffer_when_opening = false,
@@ -92,4 +91,4 @@ require'nvim-tree'.setup {
       profile = false,
     },
   },
-} 
+}

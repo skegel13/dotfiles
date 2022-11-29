@@ -41,6 +41,7 @@ Plug 'APZelos/blamer.nvim'
 Plug 'lumiliet/vim-twig'
 Plug 'sheerun/vim-polyglot'
 Plug 'jwalton512/vim-blade'
+Plug 'noahfrederick/vim-laravel'
 
 " Utilities
 Plug 'tpope/vim-abolish'

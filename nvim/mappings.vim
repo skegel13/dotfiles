@@ -167,4 +167,4 @@ nmap <silent> <leader>tv :TestVisit<CR>
 nnoremap <leader>sg :Rg<CR>
 
 " Mappings: tree.lua
-nnoremap <leader>e :NvimTreeToggle<CR>
+nnoremap <leader>e :NvimTreeFindFileToggle<CR>

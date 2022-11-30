@@ -1,2 +1,2 @@
-export EDITOR="nvim"
-export BAT_THEME="Dracula"
+# export EDITOR="nvim"
+# export BAT_THEME="Dracula"

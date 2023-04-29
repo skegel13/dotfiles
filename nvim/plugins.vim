@@ -31,6 +31,7 @@ Plug 'airblade/vim-rooter'
 
 " Intellisense
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'github/copilot.vim'
 
 " Git
 Plug 'tpope/vim-fugitive'

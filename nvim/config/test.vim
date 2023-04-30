@@ -4,9 +4,9 @@ if kitty != ""
 	let test#strategy = "kitty"
 else
 	if has("nvim")
-		let test#strategy = "neovim"
+		let test#strategy = "basic"
 	else
-		let test#strategy = "vimterminal"
+		let test#strategy = "basic"
 	endif
 endif
 let test#php#phpunit#executable = 'vendor/bin/phpunit'

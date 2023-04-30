@@ -56,7 +56,6 @@ Plug 'andymass/vim-matchup'
 Plug 'raimondi/delimitmate'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'vim-test/vim-test'
-Plug 'jiangmiao/auto-pairs'
 Plug 'kyazdani42/nvim-tree.lua'
 
 " Themes

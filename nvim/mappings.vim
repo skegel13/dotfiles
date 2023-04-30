@@ -25,9 +25,6 @@ nmap <C-K> <C-W><C-K>
 nmap <C-H> <C-W><C-H>
 nmap <C-L> <C-W><C-L>
 
-"Shortcut to edit vimrc
-nmap <leader>ev :tabedit $MYVIMRC<cr>
-
 " Navigate lines
 " Make j and k move to the next row, not file line
 nnoremap j gj

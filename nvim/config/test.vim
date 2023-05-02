@@ -4,7 +4,7 @@ if kitty != ""
 	let test#strategy = "kitty"
 else
 	if has("nvim")
-		let test#strategy = "basic"
+		let test#strategy = "neovim"
 	else
 		let test#strategy = "basic"
 	endif

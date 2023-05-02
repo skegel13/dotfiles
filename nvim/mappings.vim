@@ -152,6 +152,8 @@ nmap <silent> gr <Cmd>Telescope coc references_used<CR>
 nnoremap <silent><nowait> <space>a <Cmd>Telescope coc diagnostics<cr>
 nnoremap <silent><nowait> <space>c <Cmd>Telescope coc commands<cr>
 nnoremap <silent><nowait> <space>s <Cmd>Telescope coc workspace_symbols<cr>
+nnoremap <silent> <leader>a <Cmd>Telescope coc line_code_actions<cr>
+nnoremap <silent> <leader>ac <Cmd>Telescope coc code_actions<cr>
 
 " Mappings: test
 nmap <silent> <leader>tn :TestNearest<CR>
